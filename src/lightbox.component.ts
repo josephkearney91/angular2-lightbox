@@ -30,6 +30,7 @@ import { LightboxEvent, LIGHTBOX_EVENT, IAlbum, IEvent, LightboxWindowRef } from
         <div class="lb-details">
           <span class="lb-caption animation fadeIn" [hidden]="!ui.showCaption" #caption>{{ album[currentImageIndex].caption }}</span>
           <span class="lb-number animation fadeIn" [hidden]="!ui.showPageNumber" #number>{{ content.pageNumber }}</span>
+          <span class="btn btn-sucess animation fadeIn"><a routerLink="/image/"+{{album[currentImageIndex].id}}>Buy</span>
         </div>
         <div class="lb-closeContainer">
           <a class="lb-close" (click)="close($event)"></a>
